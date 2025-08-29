@@ -58,3 +58,36 @@ ros2 launch follow_line follow_line.launch.py
 
 After Gazebo loads, the robot detects the lane line and follows it automatically.
 ```
+## Repo layout
+```bash
+ROS2_Line_Following/
+├─ follow_line/
+│  ├─ launch/
+│  │   └─ follow_line.launch.py
+│  ├─ follow_line/
+│  │   └─ follow_line_node.py
+│  ├─ package.xml
+│  ├─ setup.py
+│  ├─ setup.cfg
+│  └─ resource/
+│      └─ follow_line
+├─ .gitignore
+└─ README.md
+```
+
+## Topics
+```bash
+Subscribes: /camera/image_raw (sensor_msgs/Image)
+
+Publishes: /cmd_vel (geometry_msgs/Twist)
+```
+
+## License
+```bash
+This project is licensed under the MIT License.
+```
+
+## Author
+```bash
+Built by Prajwal Sanvatsarkar
+```
